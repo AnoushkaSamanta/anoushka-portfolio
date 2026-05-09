@@ -10,6 +10,7 @@ export default function LenisInit() {
       touchMultiplier: 1.8,
     })
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     ;(window as any).lenis = lenis
 
     function raf(time: number) {
@@ -20,6 +21,7 @@ export default function LenisInit() {
 
     return () => {
       lenis.destroy()
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       delete (window as any).lenis
     }
   }, [])

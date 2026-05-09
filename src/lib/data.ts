@@ -66,7 +66,7 @@ export const EXPERIENCE: Experience[] = [
       'Replaced a manual form-based intake system with authentication, file upload, and knowledge-base integration using Better Auth, PostgreSQL, Prisma, and Cloudflare R2.',
       'Reduced onboarding data entry by approximately 60%.',
     ],
-    stack: ['Better Auth', 'PostgreSQL', 'Prisma', 'Cloudflare R2'],
+    stack: ['Next.js','Better Auth', 'PostgreSQL', 'Prisma', 'Cloudflare R2'],
   },
   {
     id: 'xhug',
@@ -75,7 +75,7 @@ export const EXPERIENCE: Experience[] = [
     role: 'Front End Web Development Intern',
     period: 'Mar 2025 – July 2025',
     bullets: [
-      'Redesigned the websites of X-HUG and Ankbyte, resolving cross-device layout issues and improving UI consistency by 40%.',
+      'Redesigned the websites of X-HUG, resolving cross-device layout issues and improving UI consistency by 40%.',
       'Improved site speed and reliability, resulting in a 2× increase in client interaction.',
     ],
     stack: ['React.js', 'Next.js', 'Tailwind CSS'],
@@ -90,7 +90,7 @@ export const EXPERIENCE: Experience[] = [
       'Built a web application that generates personalised CKD-specific diet plans based on disease stage, age, and medical conditions.',
       'Reduced physicians\' manual diet planning effort by 70%; validated across 20+ patient profiles spanning 5 disease stages and 3 age groups.',
     ],
-    stack: ['React.js', 'Node.js', 'PostgreSQL'],
+    stack: ['React.js', 'Node.js', 'Express.js','MongoDB'],
   },
 ]
 

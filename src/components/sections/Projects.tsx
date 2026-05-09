@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react'
 import { PROJECTS, type Project } from '@/lib/data'
 import ProjectCard from '@/components/ui/ProjectCard'
-import SectionLabel from '@/components/ui/SectionLabel'
 import FadeIn from '@/components/ui/FadeIn'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, ArrowUpRight } from 'lucide-react'
@@ -14,9 +13,11 @@ export default function Projects() {
   useEffect(() => {
     if (selectedProject) {
       document.body.style.overflow = 'hidden'
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       if ((window as any).lenis) (window as any).lenis.stop()
     } else {
       document.body.style.overflow = 'unset'
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       if ((window as any).lenis) (window as any).lenis.start()
     }
   }, [selectedProject])

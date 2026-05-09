@@ -5,6 +5,7 @@ import ScrollProgress from '@/components/ui/ScrollProgress'
 import SocialSidebar from '@/components/ui/SocialSidebar'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://anoushkasamanta.com'),
   title: 'Anoushka Samanta — Full Stack Engineer',
   description:
     'B.Tech CSE student at IIIT Kottayam (CGPA 9.95) building production-grade web systems, AI-integrated applications, and blockchain tools.',

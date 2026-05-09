@@ -51,7 +51,7 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <FadeIn className="flex flex-col items-center text-center">
           <SectionLabel>Get in Touch</SectionLabel>
-          <h2 className="font-heading font-bold text-6xl md:text-7xl text-text-0 mb-16">Contact</h2>
+          <h2 className="font-heading font-bold text-6xl md:text-7xl text-text-0 mb-6">Let&apos;s work together</h2>
         </FadeIn>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
@@ -98,7 +98,7 @@ export default function Contact() {
                   <h3 className="font-heading text-2xl text-text-0">Message Received</h3>
                   <p className="text-text-1 font-light">
                     Your message has been received.<br />
-                    I'll be in touch shortly.
+                    I&apos;ll be in touch shortly.
                   </p>
                 </motion.div>
               ) : (

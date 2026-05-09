@@ -1,7 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { SKILLS } from '@/lib/data'
-import SectionLabel from '@/components/ui/SectionLabel'
 import FadeIn from '@/components/ui/FadeIn'
 import { motion } from 'framer-motion'
 
@@ -42,7 +41,7 @@ export default function Skills() {
           {/* Left Column: Sticky Navigation (Desktop Only) */}
           <div className="md:col-span-5 hidden md:block">
             <div className="sticky top-40 space-y-12">
-              {categories.map(([category, _], index) => {
+              {categories.map(([category], index) => {
                 const isActive = activeCategory === index
                 return (
                   <div 

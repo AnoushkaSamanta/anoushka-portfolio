@@ -40,7 +40,9 @@ export default function Navbar() {
     e.preventDefault()
     setMenuOpen(false)
     const target = document.querySelector(href)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if (target && (window as any).lenis) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (window as any).lenis.scrollTo(target as HTMLElement, { offset: -80, duration: 1.4 })
     }
   }

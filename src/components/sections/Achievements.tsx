@@ -1,6 +1,5 @@
 import { OPEN_SOURCE, CERTIFICATIONS } from '@/lib/data'
 import AchievementCard from '@/components/ui/AchievementCard'
-import SectionLabel from '@/components/ui/SectionLabel'
 import FadeIn from '@/components/ui/FadeIn'
 
 export default function Achievements() {

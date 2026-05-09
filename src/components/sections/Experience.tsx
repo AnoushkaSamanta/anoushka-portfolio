@@ -1,7 +1,6 @@
 'use client'
 import { EXPERIENCE } from '@/lib/data'
 import ExperienceCard from '@/components/ui/ExperienceCard'
-import SectionLabel from '@/components/ui/SectionLabel'
 import FadeIn from '@/components/ui/FadeIn'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
