@@ -7,7 +7,7 @@ export async function POST(req: Request) {
   try {
     const { name, email, message } = await req.json()
     await resend.emails.send({
-      from: 'portfolio@yourdomain.com', // In production, replace with verified domain
+      from: 'onboarding@resend.dev', // Resend's default sender for testing
       to: PERSONAL.email,
       subject: `Portfolio message from ${name}`,
       html: `
