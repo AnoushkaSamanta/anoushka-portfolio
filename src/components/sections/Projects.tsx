@@ -27,7 +27,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <FadeIn className="flex flex-col items-center text-center">
        
-          <h2 className="font-heading font-bold text-6xl md:text-7xl text-text-0 mb-16">Projects</h2>
+          <h2 className="font-heading font-bold text-4xl sm:text-5xl md:text-7xl text-text-0 mb-16">Projects</h2>
         </FadeIn>
 
         <div className="flex flex-col gap-4">

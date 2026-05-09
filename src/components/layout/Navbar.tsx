@@ -115,17 +115,35 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-white/5 bg-bg-0 py-6 px-6">
-          {NAV_LINKS.map(({ label, href }) => (
-            <a
-              key={href}
-              href={href}
-              onClick={(e) => handleNavClick(e, href)}
-              className="block py-3 text-sm text-text-1 hover:text-text-0 tracking-widest uppercase font-mono"
-            >
-              {label}
+        <div className="md:hidden border-t border-white/5 bg-bg-0 py-6 px-6 shadow-2xl">
+          <div className="mb-6">
+            {NAV_LINKS.map(({ label, href }) => (
+              <a
+                key={href}
+                href={href}
+                onClick={(e) => handleNavClick(e, href)}
+                className="block py-3 text-sm text-text-1 hover:text-text-0 tracking-widest uppercase font-mono"
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+          
+          {/* Mobile Social Links */}
+          <div className="pt-6 border-t border-white/10 flex flex-wrap gap-x-6 gap-y-4">
+            <a href={`mailto:${PERSONAL.email}`} className="text-[11px] text-text-2 hover:text-accent font-mono uppercase tracking-[0.15em] transition-colors">
+              Email
             </a>
-          ))}
+            <a href={PERSONAL.github} target="_blank" rel="noopener noreferrer" className="text-[11px] text-text-2 hover:text-accent font-mono uppercase tracking-[0.15em] transition-colors">
+              GitHub
+            </a>
+            <a href={PERSONAL.linkedin} target="_blank" rel="noopener noreferrer" className="text-[11px] text-text-2 hover:text-accent font-mono uppercase tracking-[0.15em] transition-colors">
+              LinkedIn
+            </a>
+            <a href="https://leetcode.com/u/Anoushka-Samanta/" target="_blank" rel="noopener noreferrer" className="text-[11px] text-text-2 hover:text-accent font-mono uppercase tracking-[0.15em] transition-colors">
+              LeetCode
+            </a>
+          </div>
         </div>
       )}
     </header>

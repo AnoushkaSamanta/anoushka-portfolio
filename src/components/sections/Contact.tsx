@@ -51,10 +51,10 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <FadeIn className="flex flex-col items-center text-center">
           <SectionLabel>Get in Touch</SectionLabel>
-          <h2 className="font-heading font-bold text-6xl md:text-7xl text-text-0 mb-6">Let&apos;s work together</h2>
+          <h2 className="font-heading font-bold text-4xl sm:text-5xl md:text-7xl text-text-0 mb-6">Let&apos;s work together</h2>
         </FadeIn>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
           
           {/* Left Column */}
           <FadeIn direction="left">

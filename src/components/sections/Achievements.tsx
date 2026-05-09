@@ -8,7 +8,7 @@ export default function Achievements() {
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <FadeIn className="flex flex-col items-center text-center">
         
-          <h2 className="font-heading font-bold text-6xl md:text-7xl text-text-0 mb-16">Achievements</h2>
+          <h2 className="font-heading font-bold text-4xl sm:text-5xl md:text-7xl text-text-0 mb-16">Achievements</h2>
         </FadeIn>
 
         <div className="mb-20">

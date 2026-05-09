@@ -34,7 +34,7 @@ export default function Hero() {
               CGPA 9.95 · IIIT Kottayam · 2023–2027
             </motion.p>
 
-            <motion.h1 variants={item} className="font-display text-[100px] md:text-[120px] leading-[0.92] font-light italic text-text-0 mb-6">
+            <motion.h1 variants={item} className="font-display text-[60px] sm:text-[80px] md:text-[120px] leading-[0.92] font-light italic text-text-0 mb-6">
               Anoushka<br />
               <span className="ml-4 md:ml-8">Samanta</span>
             </motion.h1>
@@ -43,19 +43,19 @@ export default function Hero() {
 
            
 
-            <motion.p variants={item} className="text-text-1 text-lg md:text-xl font-light leading-relaxed max-w-xl mb-10">
+            <motion.p variants={item} className="text-text-1 text-base md:text-xl font-light leading-relaxed max-w-xl mb-10">
               B.Tech CSE student at IIIT Kottayam passionate about turning complex, repetitive workflows into clean, automated solutions — from full-stack web applications to AI-driven tools with a growing footprint in DevOps and machine learning.
             </motion.p>
 
             <motion.div variants={item} className="flex flex-wrap items-center gap-6">
               {/* Contact Me button */}
               <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')}
-                 className="border border-accent/40 text-accent text-base px-8 py-4 hover:bg-accent/10 transition-all duration-300 tracking-wide font-mono rounded-lg">
+                 className="border border-accent/40 text-accent text-sm md:text-base px-6 py-3 md:px-8 md:py-4 hover:bg-accent/10 transition-all duration-300 tracking-wide font-mono rounded-lg">
                 Contact Me
               </a>
               {/* Resume Button */}
               <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
-                 className="bg-accent text-bg-0 text-base px-8 py-4 hover:bg-accent/90 transition-all duration-300 tracking-wide font-mono flex items-center gap-2 rounded-lg font-semibold">
+                 className="bg-accent text-bg-0 text-sm md:text-base px-6 py-3 md:px-8 md:py-4 hover:bg-accent/90 transition-all duration-300 tracking-wide font-mono flex items-center gap-2 rounded-lg font-semibold">
                 View Resume <ArrowUpRight size={16} />
               </a>
             </motion.div>
@@ -63,7 +63,7 @@ export default function Hero() {
 
           {/* Right: 2 cols */}
           <motion.div
-            className="md:col-span-2 hidden md:block"
+            className="md:col-span-2 mt-12 md:mt-0 w-3/4 sm:w-1/2 md:w-full mx-auto"
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}

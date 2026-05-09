@@ -26,7 +26,7 @@ export default function ProjectCard({ project, index, onClick }: { project: Proj
           <div className="md:col-span-11">
             <div className="flex flex-col md:flex-row md:items-start justify-between mb-4 gap-2">
               <div>
-                <h3 className="font-heading font-bold text-4xl md:text-5xl text-text-0 mb-2">{project.title}</h3>
+                <h3 className="font-heading font-bold text-3xl md:text-5xl text-text-0 mb-2">{project.title}</h3>
                 <p className="font-mono text-base text-text-2 tracking-wide">{project.subtitle}</p>
               </div>
               <div className="flex flex-col md:items-end gap-2">
@@ -44,7 +44,7 @@ export default function ProjectCard({ project, index, onClick }: { project: Proj
             </div>
 
             {/* Description */}
-            <p className="text-text-1 text-base md:text-lg font-light leading-relaxed mb-6">
+            <p className="text-text-1 text-sm md:text-lg font-light leading-relaxed mb-6">
               {project.description}
             </p>
 

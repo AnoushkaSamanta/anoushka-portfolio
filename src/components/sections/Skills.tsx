@@ -33,7 +33,7 @@ export default function Skills() {
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <FadeIn className="flex flex-col items-center text-center mb-24">
           
-          <h2 className="font-heading font-bold text-6xl md:text-7xl text-text-0">Skills</h2>
+          <h2 className="font-heading font-bold text-4xl sm:text-5xl md:text-7xl text-text-0">Skills</h2>
         </FadeIn>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 relative">
