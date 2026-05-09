@@ -10,18 +10,18 @@ export default function ExperienceCard({ exp, index }: { exp: Experience; index:
 
         {/* Company + date row */}
         <div>
-          <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-text-1 font-medium mb-2 block">{exp.period}</span>
-          <h4 className="font-heading font-semibold text-2xl md:text-3xl mb-2 text-accent">{exp.company}</h4>
+          <span className="font-mono text-sm tracking-[0.2em] uppercase text-text-1 font-medium mb-2 block">{exp.period}</span>
+          <h4 className="font-heading font-semibold text-3xl md:text-4xl mb-2 text-accent">{exp.company}</h4>
         </div>
 
         {/* Role */}
-        <h3 className="font-heading font-semibold text-lg text-text-0 mb-1">{exp.role}</h3>
-        <p className="font-mono text-[10px] text-text-2 mb-4 tracking-wider">{exp.location}</p>
+        <h3 className="font-heading font-semibold text-xl md:text-2xl text-text-0 mb-1">{exp.role}</h3>
+        <p className="font-mono text-xs text-text-2 mb-4 tracking-wider">{exp.location}</p>
 
         {/* Bullets */}
         <ul className="space-y-2 mb-5">
           {exp.bullets.map((b, i) => (
-            <li key={i} className="flex gap-3 text-sm text-text-1 font-light leading-relaxed">
+            <li key={i} className="flex gap-3 text-base text-text-1 font-light leading-relaxed">
               <span className="text-accent shrink-0 mt-1.5">·</span>
               <span>{b}</span>
             </li>
@@ -31,7 +31,7 @@ export default function ExperienceCard({ exp, index }: { exp: Experience; index:
         {/* Stack */}
         <div className="flex flex-wrap gap-2">
           {exp.stack.map((tech) => (
-            <span key={tech} className="font-mono text-[11px] tracking-wider uppercase text-accent px-2 py-0.5">
+            <span key={tech} className="font-mono text-xs tracking-wider uppercase text-accent px-2 py-0.5">
               {tech}
             </span>
           ))}

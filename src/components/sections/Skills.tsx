@@ -33,7 +33,7 @@ export default function Skills() {
     <section id="skills" className="py-28 bg-bg-1">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <FadeIn className="flex flex-col items-center text-center mb-24">
-          <SectionLabel>Technical Skills</SectionLabel>
+          
           <h2 className="font-heading font-bold text-6xl md:text-7xl text-text-0">Skills</h2>
         </FadeIn>
 

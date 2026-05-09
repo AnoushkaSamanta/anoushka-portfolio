@@ -78,9 +78,7 @@ export default function Contact() {
               <a href={PERSONAL.linkedin} target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-text-2 hover:text-accent hover:underline transition-colors uppercase tracking-widest">
                 LinkedIn
               </a>
-              <a href={PERSONAL.portfolio} target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-text-2 hover:text-accent hover:underline transition-colors uppercase tracking-widest">
-                Portfolio
-              </a>
+              
             </div>
           </FadeIn>
 

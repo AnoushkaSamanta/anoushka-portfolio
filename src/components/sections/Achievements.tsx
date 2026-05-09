@@ -8,7 +8,7 @@ export default function Achievements() {
     <section id="achievements" className="py-28 bg-bg-0">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <FadeIn className="flex flex-col items-center text-center">
-          <SectionLabel>Recognition</SectionLabel>
+        
           <h2 className="font-heading font-bold text-6xl md:text-7xl text-text-0 mb-16">Achievements</h2>
         </FadeIn>
 

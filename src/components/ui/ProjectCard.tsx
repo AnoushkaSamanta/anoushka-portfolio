@@ -26,32 +26,27 @@ export default function ProjectCard({ project, index, onClick }: { project: Proj
           <div className="md:col-span-11">
             <div className="flex flex-col md:flex-row md:items-start justify-between mb-4 gap-2">
               <div>
-                <h3 className="font-heading font-bold text-3xl text-text-0 mb-2">{project.title}</h3>
-                <p className="font-mono text-sm text-text-2 tracking-wide">{project.subtitle}</p>
+                <h3 className="font-heading font-bold text-4xl md:text-5xl text-text-0 mb-2">{project.title}</h3>
+                <p className="font-mono text-base text-text-2 tracking-wide">{project.subtitle}</p>
               </div>
               <div className="flex flex-col md:items-end gap-2">
-                <span className="font-mono text-sm text-text-1 font-medium">{project.date}</span>
+                <span className="font-mono text-base text-text-1 font-medium">{project.date}</span>
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()} // Prevent opening modal when clicking link
-                  className="flex items-center gap-1.5 font-mono text-sm text-accent hover:text-accent/80 transition-colors tracking-wider font-semibold"
+                  className="flex items-center gap-1.5 font-mono text-base text-accent hover:text-accent/80 transition-colors tracking-wider font-semibold"
                 >
-                  GitHub <ArrowUpRight size={16} />
+                  GitHub <ArrowUpRight size={18} />
                 </a>
               </div>
             </div>
 
-            {/* Bullets */}
-            <ul className="space-y-3 mb-6">
-              {project.bullets.map((b, i) => (
-                <li key={i} className="flex gap-3 text-sm text-text-1 font-light leading-relaxed">
-                  <span className="text-accent mt-1.5 shrink-0">·</span>
-                  <span>{b}</span>
-                </li>
-              ))}
-            </ul>
+            {/* Description */}
+            <p className="text-text-1 text-base md:text-lg font-light leading-relaxed mb-6">
+              {project.description}
+            </p>
 
             {/* Read More button (visible on hover) */}
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">

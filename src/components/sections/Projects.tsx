@@ -23,9 +23,9 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-28 bg-bg-0 relative">
-      <div className="max-w-6xl mx-auto px-6 md:px-12">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
         <FadeIn className="flex flex-col items-center text-center">
-          <SectionLabel>Selected Work</SectionLabel>
+       
           <h2 className="font-heading font-bold text-6xl md:text-7xl text-text-0 mb-16">Projects</h2>
         </FadeIn>
 
@@ -73,10 +73,6 @@ export default function Projects() {
                 <div className="p-8 md:p-12 relative z-10">
                   <h3 className="font-heading font-bold text-4xl md:text-5xl text-text-0 mb-2">{selectedProject.title}</h3>
                   <p className="font-mono text-base text-text-2 tracking-wide mb-6">{selectedProject.subtitle}</p>
-                  
-                  <p className="text-text-0 text-lg font-light leading-relaxed mb-8 max-w-3xl">
-                    {selectedProject.description}
-                  </p>
 
                   <div className="mb-10">
                     <h4 className="font-mono text-[10px] text-text-2 uppercase tracking-[0.2em] mb-4">Tech Stack</h4>

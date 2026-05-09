@@ -34,9 +34,8 @@ export const PERSONAL = {
   location: 'Kolkata, West Bengal, India',
   email: 'anoushka1701@gmail.com',
   phone: '+91-6290075800',
-  linkedin: 'https://linkedin.com/in/[your-handle]', // fill in
-  github: 'https://github.com/[your-handle]',         // fill in
-  portfolio: '[portfolio-url]',                        // fill in
+  linkedin: 'https://www.linkedin.com/in/anoushka-samanta-b094082a6/', 
+  github: 'https://github.com/AnoushkaSamanta/',                             
   education: {
     institution: 'Indian Institute of Information Technology, Kottayam, Kerala',
     shortName: 'IIIT Kottayam',
@@ -60,7 +59,7 @@ export const EXPERIENCE: Experience[] = [
   {
     id: 'ankbyte',
     company: 'Ankbyte',
-    location: 'Mexico',
+    location: 'Remote',
     role: 'AI Engineering Intern — Backend Systems',
     period: 'Feb 2026 – Mar 2026',
     bullets: [
@@ -72,7 +71,7 @@ export const EXPERIENCE: Experience[] = [
   {
     id: 'xhug',
     company: 'X-HUG.ai',
-    location: 'Texas, US',
+    location: 'Remote',
     role: 'Front End Web Development Intern',
     period: 'Mar 2025 – July 2025',
     bullets: [
@@ -84,7 +83,7 @@ export const EXPERIENCE: Experience[] = [
   {
     id: 'eldroga',
     company: 'Eldroga Life Sciences',
-    location: 'Chennai, Tamil Nadu',
+    location: 'Remote',
     role: 'Freelance Web Developer',
     period: 'June 2025',
     bullets: [
@@ -102,12 +101,12 @@ export const PROJECTS: Project[] = [
     title: 'ChainVerify',
     subtitle: 'Digital Bill and Receipt Verification System',
     date: 'March 2026',
-    github: 'https://github.com/[handle]/chainverify', // fill in
+    github: 'https://github.com/AnoushkaSamanta/receipt-verification', // fill in
     stack: [
       'Python', 'FastAPI', 'Next.js', 'TypeScript',
       'Docker', 'Redis', 'PostgreSQL', 'Nginx', 'Cloudflare R2', 'WebSockets',
     ],
-    description: 'A robust digital verification system that uses custom blockchain technology to ensure document integrity.',
+    description: 'Document fraud is costly and hard to catch manually. ChainVerify uses a custom blockchain engine with Merkle tree hashing to verify the integrity of bills and receipts in seconds — ensuring tampered documents are caught before they cause damage.',
     bullets: [
       'Engineered a custom blockchain engine for tamper-proof document storage.',
       'Designed an end-to-end receipt verification pipeline.',
@@ -122,12 +121,12 @@ export const PROJECTS: Project[] = [
     title: 'TransitFlow',
     subtitle: 'Predictive Delay & Network Bottleneck Analysis',
     date: 'Feb 2026',
-    github: 'https://github.com/[handle]/transitflow', // fill in
+    github: 'https://github.com/AnoushkaSamanta/Public-Transport-Bottleneck-Analysis_Team21', // fill in
     stack: [
       'R', 'dplyr', 'tidyr', 'lubridate', 'caret',
       'randomForest', 'e1071', 'keras', 'TensorFlow', 'igraph', 'PCA', 'K-Means', 'DBSCAN', 'LSTM',
     ],
-    description: 'An advanced predictive delay analysis tool that uses machine learning to identify bottlenecks in transit networks.',
+    description: 'Public transit delay data is messy and underutilized. TransitFlow applies machine learning — from Random Forest classifiers to LSTM networks — to predict route delays and surface network bottlenecks, achieving 75%+ cross-validated accuracy.',
     bullets: [
       'Built an end-to-end ML data pipeline for transit delays.',
       'Trained classification models achieving 75%+ cross-validated accuracy.',
@@ -142,12 +141,12 @@ export const PROJECTS: Project[] = [
     title: 'CodeKraft',
     subtitle: 'AI-Powered Web Application Builder',
     date: 'Jan 2026',
-    github: 'https://github.com/[handle]/codekraft', // fill in
+    github: 'https://github.com/AnoushkaSamanta/codekraft', // fill in
     stack: [
       'Next.js', 'TypeScript', 'Docker', 'Prisma',
       'PostgreSQL', 'Inngest', 'Google Gemini API', 'E2B Sandboxes', 'Clerk',
     ],
-    description: 'An AI-powered web application builder that generates and runs code dynamically within isolated sandboxes.',
+    description: 'Building a web app still takes days of boilerplate. CodeKraft changes that — describe what you want, and an AI agent generates, manages dependencies, and runs a fully functional Next.js application inside an isolated sandbox environment, live.',
     bullets: [
       'Built an AI-driven application that generates Next.js projects inside isolated sandboxes.',
       'Implemented a chat-based project workflow with live previews.',
@@ -202,8 +201,7 @@ export const SKILLS: Record<string, SkillItem[]> = {
     { name: 'Jest', icon: 'devicon-jest-plain colored' },
     { name: 'Supertest', icon: '' },
     { name: 'GitHub Actions', icon: 'devicon-github-original' },
-    { name: 'AWS S3', icon: 'devicon-amazonwebservices-plain-wordmark colored' },
-    { name: 'AWS EC2', icon: 'devicon-amazonwebservices-plain-wordmark colored' },
+    { name: 'AWS', icon: 'devicon-amazonwebservices-plain-wordmark colored' },
   ],
 }
 
@@ -212,16 +210,16 @@ export const OPEN_SOURCE: Achievement[] = [
   {
     id: 'gssoc',
     title: 'GirlScript Summer of Code 2025',
-    detail: 'Earned 60+ points and received certificate; built features and debugged.',
+    detail: 'Contributed to GirlScript Summer of Code 2025, earning 60+ points through consistent open-source engagement.',
     type: 'Open Source',
-    certLink: '[gssoc-cert-link]',
+    certLink: 'https://drive.google.com/file/d/1FixEB3kn4nku6eFoI2Ih4gACfPfhpHyT/view',
   },
   {
     id: 'ssoc',
     title: 'Social Summer of Code 2025',
-    detail: '10+ PRs merged across AI-integrated MERN applications.',
+    detail: 'Contributed to Social Summer of Code 2025 with 10+ merged pull requests across AI-integrated MERN stack applications.',
     type: 'Open Source',
-    certLink: '[ssoc-cert-link]',
+    certLink: 'https://drive.google.com/file/d/1QhyosWDNyFKQgTdfo66VkNZQ6eJCTdu_/view',
   },
 ]
 
@@ -231,6 +229,6 @@ export const CERTIFICATIONS: Achievement[] = [
     title: 'Machine Learning Foundations',
     detail: 'Amazon AWS Educate certification in Machine Learning Foundations — July 2025.',
     type: 'Certification',
-    certLink: '[aws-badge-link]',
+    certLink: 'https://www.credly.com/badges/3a86ed4e-5d9b-4426-9670-aca0b7b616cf',
   },
 ]

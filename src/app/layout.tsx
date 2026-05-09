@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css' // imports globals + google fonts
 import LenisInit from '@/components/ui/LenisInit'
 import ScrollProgress from '@/components/ui/ScrollProgress'
+import SocialSidebar from '@/components/ui/SocialSidebar'
 
 export const metadata: Metadata = {
   title: 'Anoushka Samanta — Full Stack Engineer',
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <LenisInit />
         <ScrollProgress />
+        <SocialSidebar />
         {children}
       </body>
     </html>

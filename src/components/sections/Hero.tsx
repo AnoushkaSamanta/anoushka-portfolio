@@ -23,7 +23,7 @@ export default function Hero() {
 
   return (
     <section id="hero" className="min-h-screen flex items-center pt-16 bg-bg-0 relative">
-      <div className="max-w-6xl mx-auto px-6 md:px-12 w-full">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-16 items-center">
 
           {/* Left: 3 cols */}
@@ -32,7 +32,7 @@ export default function Hero() {
               CGPA 9.95 · IIIT Kottayam · 2023–2027
             </motion.p>
 
-            <motion.h1 variants={item} className="font-display text-[80px] md:text-[100px] leading-[0.92] font-light italic text-text-0 mb-6">
+            <motion.h1 variants={item} className="font-display text-[100px] md:text-[120px] leading-[0.92] font-light italic text-text-0 mb-6">
               Anoushka<br />
               <span className="ml-4 md:ml-8">Samanta</span>
             </motion.h1>
@@ -41,20 +41,20 @@ export default function Hero() {
 
            
 
-            <motion.p variants={item} className="text-text-1 text-base font-light leading-relaxed max-w-md mb-10">
-              Full-stack developer and freelancer who replaces manual workflows with reliable, automated systems — drawn to the intersections of web, blockchain, and machine learning.
+            <motion.p variants={item} className="text-text-1 text-lg md:text-xl font-light leading-relaxed max-w-xl mb-10">
+              B.Tech CSE student at IIIT Kottayam passionate about turning complex, repetitive workflows into clean, automated solutions — from full-stack web applications to AI-driven tools with a growing footprint in DevOps and machine learning.
             </motion.p>
 
             <motion.div variants={item} className="flex flex-wrap items-center gap-6">
-              {/* View Projects button */}
-              <a href="#projects" onClick={(e) => handleNavClick(e, '#projects')}
-                 className="border border-accent/40 text-accent text-sm px-6 py-3 hover:bg-accent/10 transition-all duration-300 tracking-wide font-mono rounded-lg">
-                View Projects
+              {/* Contact Me button */}
+              <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')}
+                 className="border border-accent/40 text-accent text-base px-8 py-4 hover:bg-accent/10 transition-all duration-300 tracking-wide font-mono rounded-lg">
+                Contact Me
               </a>
               {/* Resume Button */}
               <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
-                 className="bg-accent text-bg-0 text-sm px-6 py-3 hover:bg-accent/90 transition-all duration-300 tracking-wide font-mono flex items-center gap-2 rounded-lg font-semibold">
-                View Resume <ArrowUpRight size={14} />
+                 className="bg-accent text-bg-0 text-base px-8 py-4 hover:bg-accent/90 transition-all duration-300 tracking-wide font-mono flex items-center gap-2 rounded-lg font-semibold">
+                View Resume <ArrowUpRight size={16} />
               </a>
             </motion.div>
           </motion.div>
@@ -70,12 +70,11 @@ export default function Hero() {
             <div className="relative">
               <div className="aspect-[3/4] bg-bg-2 overflow-hidden relative group rounded-2xl">
                 <Image
-                  src="/anoushka.jpg"
+                  src="/anoushka.jpeg"
                   alt="Anoushka Samanta"
                   fill
                   priority
-                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  style={{ filter: 'grayscale(100%) sepia(10%)' }}
+                  className="object-cover transition-all duration-500"
                 />
               </div>
             </div>

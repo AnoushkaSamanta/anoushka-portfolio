@@ -18,9 +18,9 @@ export default function Experience() {
 
   return (
     <section id="experience" className="py-28 bg-bg-1">
-      <div className="max-w-4xl mx-auto px-6 md:px-12">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
         <FadeIn className="flex flex-col items-center text-center">
-          <SectionLabel>Work Experience</SectionLabel>
+          
           <h2 className="font-heading font-bold text-6xl md:text-7xl text-text-0 mb-16">Experience</h2>
         </FadeIn>
 
