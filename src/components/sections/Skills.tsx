@@ -40,22 +40,33 @@ export default function Skills() {
           
           {/* Left Column: Sticky Navigation (Desktop Only) */}
           <div className="md:col-span-5 hidden md:block">
-            <div className="sticky top-40 space-y-12">
+            <div className="sticky top-[20vh] space-y-6">
               {categories.map(([category], index) => {
                 const isActive = activeCategory === index
                 return (
-                  <div 
+                  <button 
                     key={category} 
-                    className={`transition-all duration-500 ease-out origin-left ${
-                      isActive ? 'opacity-100 scale-100' : 'opacity-20 scale-95'
+                    onClick={() => {
+                      const elements = document.querySelectorAll('.skill-section')
+                      const target = elements[index]
+                      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                      if (target && (window as any).lenis) {
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                        (window as any).lenis.scrollTo(target as HTMLElement, { offset: -160, duration: 1.2 })
+                      } else if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                      }
+                    }}
+                    className={`flex flex-col text-left transition-all duration-500 ease-out origin-left cursor-pointer ${
+                      isActive ? 'opacity-100 scale-100' : 'opacity-20 scale-95 hover:opacity-50'
                     }`}
                   >
-                    <span className="font-display italic text-6xl leading-none text-accent/30 select-none block mb-4">
+                    <span className="font-display italic text-3xl leading-none text-accent/30 select-none block mb-2">
                       {String(index + 1).padStart(2, '0')}
                     </span>
-                    <div className="w-12 h-px bg-accent my-4" />
-                    <h3 className="font-heading font-bold text-4xl text-text-0">{category}</h3>
-                  </div>
+                    <div className="w-12 h-px bg-accent my-2" />
+                    <h3 className="font-heading font-bold text-2xl text-text-0">{category}</h3>
+                  </button>
                 )
               })}
             </div>

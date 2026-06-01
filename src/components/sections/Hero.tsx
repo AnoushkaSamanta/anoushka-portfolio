@@ -31,7 +31,7 @@ export default function Hero() {
           {/* Left: 3 cols */}
           <motion.div className="md:col-span-3" variants={container} initial="hidden" animate="visible">
             <motion.p variants={item} className="font-mono text-xs text-accent tracking-widest uppercase mb-6">
-              CGPA 9.95 · IIIT Kottayam · 2023–2027
+              CGPA 9.96 · IIIT Kottayam · 2023–2027
             </motion.p>
 
             <motion.h1 variants={item} className="font-display text-[60px] sm:text-[80px] md:text-[120px] leading-[0.92] font-light italic text-text-0 mb-6">

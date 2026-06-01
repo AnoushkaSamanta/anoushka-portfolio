@@ -1,4 +1,4 @@
-import { OPEN_SOURCE, CERTIFICATIONS } from '@/lib/data'
+import { OPEN_SOURCE, CERTIFICATIONS, ACADEMICS_COMPETITIVE } from '@/lib/data'
 import AchievementCard from '@/components/ui/AchievementCard'
 import FadeIn from '@/components/ui/FadeIn'
 
@@ -10,6 +10,15 @@ export default function Achievements() {
         
           <h2 className="font-heading font-bold text-4xl sm:text-5xl md:text-7xl text-text-0 mb-16">Achievements</h2>
         </FadeIn>
+
+        <div className="mb-20">
+          <h3 className="font-heading font-bold text-3xl md:text-4xl text-text-0 mb-8 pb-4">Academic & Competitive</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {ACADEMICS_COMPETITIVE.map((achievement, i) => (
+              <AchievementCard key={achievement.id} achievement={achievement} index={i} />
+            ))}
+          </div>
+        </div>
 
         <div className="mb-20">
           <h3 className="font-heading font-bold text-3xl md:text-4xl text-text-0 mb-8 pb-4">Open Source Contributions</h3>
