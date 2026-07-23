@@ -3,6 +3,7 @@ import './globals.css' // imports globals + google fonts
 import LenisInit from '@/components/ui/LenisInit'
 import ScrollProgress from '@/components/ui/ScrollProgress'
 import SocialSidebar from '@/components/ui/SocialSidebar'
+import CustomCursor from '@/components/ui/CustomCursor'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://anoushkasamanta.com'),
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <LenisInit />
         <ScrollProgress />
         <SocialSidebar />
+        <CustomCursor />
         {children}
       </body>
     </html>

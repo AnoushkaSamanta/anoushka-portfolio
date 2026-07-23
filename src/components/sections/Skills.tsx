@@ -101,7 +101,12 @@ export default function Skills() {
                       className="flex flex-col items-center justify-center p-6 bg-bg-2 hover:bg-bg-3 border border-white/5 hover:border-accent/30 rounded-xl transition-all duration-300 gap-4 group"
                     >
                       {skill.icon ? (
-                        <i className={`${skill.icon} text-4xl opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 drop-shadow-sm`} />
+                        skill.icon.startsWith('http') || skill.icon.startsWith('/') ? (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img src={skill.icon} alt={skill.name} className="w-10 h-10 opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 drop-shadow-sm object-contain" style={{ filter: 'brightness(0) invert(1)' }} />
+                        ) : (
+                          <i className={`${skill.icon} text-4xl opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 drop-shadow-sm`} />
+                        )
                       ) : (
                         <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center group-hover:bg-accent/10 transition-colors">
                           <span className="text-accent font-mono text-xs opacity-70 group-hover:opacity-100 transition-opacity">{"<>"}</span>

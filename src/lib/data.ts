@@ -64,7 +64,7 @@ export const EXPERIENCE: Experience[] = [
     role: 'AI Engineering Intern (Backend Systems)',
     period: 'Feb 2026 - Mar 2026',
     bullets: [
-      'Replaced a manual form-based intake system with a full onboarding pipeline — integrating authentication (Better Auth), file upload, and knowledge-base storage (Cloudflare R2, PostgreSQL, Prisma).',
+      'Built the complete onboarding pipeline for an AI agent product from scratch — auth (Better Auth), document ingestion to Cloudflare R2 and agent config storage in PostgreSQL — replacing a manual Google Forms + human-upload workflow. ',
     ],
     stack: ['Better Auth', 'Cloudflare R2', 'PostgreSQL', 'Prisma'],
   },
@@ -75,7 +75,7 @@ export const EXPERIENCE: Experience[] = [
     role: 'Front End Web Development Intern',
     period: 'Mar 2025 - July 2025',
     bullets: [
-      'Redesigned the company website, resolving cross-device layout inconsistencies and improving UI consistency which contributed to increased client engagement post-launch.',
+      'Led the frontend work on a website rebuild from scratch in collaboration with product managers, translating complex AI product capabilities into a clear, responsive user interface — improving cross-device consistency and client-facing product presentation. ',
     ],
     stack: ['React.js', 'Next.js', 'Tailwind CSS'],
   },
@@ -95,6 +95,26 @@ export const EXPERIENCE: Experience[] = [
 
 // ─── PROJECTS ─────────────────────────────────────────────────────────────────
 export const PROJECTS: Project[] = [
+  {
+    id: 'clearnote',
+    title: 'ClearNote',
+    subtitle: 'Intelligent Clinical Dashboard & SOAP Note Generator',
+    date: 'June 2026',
+    github: 'https://github.com/MayankV004/clearnote',
+    stack: [
+      'Next.js', 'FastAPI','LangChain', 'PostgreSQL', 'AWS', 'RAG Pipeline','Terraform','Github Actions','Gemini/Groq','Docker','Deepgram','Pytest'
+    ],
+    description: 'An advanced clinical dashboard for healthcare professionals featuring automated SOAP note generation, patient activity tracking, and intelligent medical data retrieval using RAG pipelines.',
+    bullets: [
+      'Implemented automated SOAP note generation and real-time patient analytics dashboard.',
+      'Integrated RAG pipelines to assist in intelligent medical data retrieval.',
+    ],
+    detailedBullets: [
+      'Engineered an end-to-end pipeline transcribing doctor-patient audio via Deepgram, generating SOAP notes through Gemini/Groq LLMs, running drug-interaction checks, and exporting formatted PDF prescriptions via WeasyPrint — with Redis caching LLM responses to cut repeat API costs.',
+      'Built a RAG pipeline with LangChain and pgvector to chunk and embed medical guidelines into PostgreSQL, grounding LLM outputs against clinical standards rather than raw generation; stored audio/documents in S3-compatible object storage (AWS S3/MinIO).',
+      'Provisioned cloud infrastructure with Terraform, enforced code quality via GitHub Actions (linting and test checks on every PR), and wrote Pytest unit and integration tests.'
+    ],
+  },
   {
     id: 'chainverify',
     title: 'ChainVerify',
@@ -148,26 +168,24 @@ export const SKILLS: Record<string, SkillItem[]> = {
     { name: 'JavaScript', icon: 'devicon-javascript-plain colored' },
     { name: 'C++', icon: 'devicon-cplusplus-plain colored' },
     { name: 'SQL', icon: 'devicon-mysql-plain colored' },
-    { name: 'R', icon: 'devicon-r-plain colored' },
   ],
   Frontend: [
     { name: 'Next.js', icon: 'devicon-nextjs-plain' },
     { name: 'React.js', icon: 'devicon-react-original colored' },
     { name: 'Tailwind CSS', icon: 'devicon-tailwindcss-original colored' },
-    { name: 'Socket.io', icon: 'devicon-socketio-original colored' },
   ],
   Backend: [
     { name: 'FastAPI', icon: 'devicon-fastapi-plain colored' },
     { name: 'Node.js', icon: 'devicon-nodejs-plain colored' },
     { name: 'Express.js', icon: 'devicon-express-original' },
     { name: 'REST APIs', icon: '' },
+    { name: 'Web Sockets', icon: 'devicon-socketio-original colored' },
   ],
   'Databases & ORM': [
     { name: 'PostgreSQL', icon: 'devicon-postgresql-plain colored' },
     { name: 'MySQL', icon: 'devicon-mysql-plain colored' },
     { name: 'MongoDB', icon: 'devicon-mongodb-plain colored' },
-    { name: 'Supabase', icon: 'devicon-supabase-plain colored' },
-    { name: 'NeonDB', icon: '' },
+    { name: 'NeonDB', icon: 'https://cdn.simpleicons.org/neon' },
     { name: 'Prisma', icon: 'devicon-prisma-original' },
     { name: 'Redis', icon: 'devicon-redis-plain colored' },
   ],
@@ -176,22 +194,23 @@ export const SKILLS: Record<string, SkillItem[]> = {
     { name: 'NumPy', icon: 'devicon-numpy-plain colored' },
     { name: 'pandas', icon: 'devicon-pandas-plain colored' },
     { name: 'Matplotlib', icon: 'devicon-matplotlib-plain colored' },
-    { name: 'Seaborn', icon: '' },
-    { name: 'Plotly', icon: '' },
-    { name: 'NetworkX', icon: '' },
-    { name: 'Gemini API', icon: '' },
+    { name: 'LangChain', icon: 'https://cdn.simpleicons.org/langchain' },
+    { name: 'LangGraph', icon: 'https://cdn.simpleicons.org/langgraph' },
+    { name: 'RAG', icon: '' },
   ],
   'Tools & DevOps': [
     { name: 'Git', icon: 'devicon-git-plain colored' },
     { name: 'Docker', icon: 'devicon-docker-plain colored' },
+    { name: 'Kubernetes', icon: 'devicon-kubernetes-plain colored' },
     { name: 'Linux', icon: 'devicon-linux-plain colored' },
     { name: 'Postman', icon: 'devicon-postman-plain colored' },
-    { name: 'AWS (S3, EC2, VPC)', icon: 'devicon-amazonwebservices-plain-wordmark colored' },
-    { name: 'GCP', icon: 'devicon-googlecloud-plain colored' },
+    { name: 'AWS', icon: 'devicon-amazonwebservices-plain-wordmark colored' },
     { name: 'CI/CD', icon: '' },
     { name: 'GitHub Actions', icon: 'devicon-github-original' },
-    { name: 'Kubernetes', icon: 'devicon-kubernetes-plain colored' },
     { name: 'Terraform', icon: 'devicon-terraform-plain colored' },
+    { name: 'Cloudflare R2', icon: 'https://cdn.simpleicons.org/cloudflare' },
+    { name: 'Supabase', icon: 'devicon-supabase-plain colored' },
+    { name: 'Nginx', icon: 'devicon-nginx-original colored' },
   ],
 }
 
@@ -233,7 +252,7 @@ export const ACADEMICS_COMPETITIVE: Achievement[] = [
   {
     id: 'leetcode',
     title: 'LeetCode Competitive Programming',
-    detail: '300+ problems solved in Java — earned 100 Days Badge 2024 and 50 Days Badge 2026.',
+    detail: 'Solved 400+ LeetCode problems in Java; achieved a 1,688 Contest Rating (Top ~14.68% globally).',
     type: 'Competitive Programming',
   },
 ]

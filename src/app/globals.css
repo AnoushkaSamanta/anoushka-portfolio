@@ -44,3 +44,10 @@ body {
   height: 1px;
   background: #C9A96E;
 }
+
+/* Hide default cursor on desktop/fine-pointer devices */
+@media (hover: hover) and (pointer: fine) {
+  html, body, a, button, input, select, textarea, [role="button"] {
+    cursor: none !important;
+  }
+}
