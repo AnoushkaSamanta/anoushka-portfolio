@@ -96,6 +96,27 @@ export const EXPERIENCE: Experience[] = [
 // ─── PROJECTS ─────────────────────────────────────────────────────────────────
 export const PROJECTS: Project[] = [
   {
+    id: 'rategate',
+    title: 'RateGate',
+    subtitle: 'Distributed Rate Limiter & API Gateway',
+    date: 'Aug 2026',
+    github: 'https://github.com/AnoushkaSamanta/RateGate',
+    stack: [
+      'Go', 'Redis Cluster', 'Docker', 'Prometheus', 'k6', 'Lua'
+    ],
+    description: 'A distributed rate limiter enforcing atomic limits across stateless Go nodes and a Redis Cluster, using atomic Lua scripting to guarantee correctness under concurrent multi-node traffic.',
+    bullets: [
+      'Engineered a horizontally-scaled rate limiter enforcing atomic limits across 5 stateless Go nodes and a 6-node Redis Cluster.',
+      'Sustained 5,000 RPS for 60s with zero failures, optimizing p95 latency to 85ms and implementing fail-open circuit breakers.',
+    ],
+    detailedBullets: [
+      'Engineered a horizontally-scaled rate limiter enforcing atomic limits across 5 stateless Go nodes and a 6-node Redis Cluster, using atomic Lua scripting to guarantee correctness under concurrent multi-node traffic.',
+      'Implemented pluggable token-bucket and sliding-window algorithms as atomic Lua scripts with hash-tag key design; verified zero double-counting across 5,000 requests over 10 concurrent load-test runs.',
+      'Load-tested with k6 across 15 containers on a single 16-core host, sustaining 5,000 RPS for 60s with zero failed responses and peaking at 9,209 RPS; right-sized the Redis pool from 5,000 to 500 connections, cutting p95 latency from 96ms to 85ms and removing 40 timeout-induced 500s.',
+      'Chaos-tested by killing a live Redis master mid-load, measuring a 9.21s automatic failover; a custom per-route circuit breaker tripped to fail-open instantly, sustaining traffic while the cluster self-healed.'
+    ],
+  },
+  {
     id: 'clearnote',
     title: 'ClearNote',
     subtitle: 'Intelligent Clinical Dashboard & SOAP Note Generator',
