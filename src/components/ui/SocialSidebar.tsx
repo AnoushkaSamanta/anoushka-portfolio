@@ -35,7 +35,7 @@ export default function SocialSidebar() {
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1, duration: 0.8 }}
-      className="fixed left-0 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col gap-3 bg-bg-1/80 backdrop-blur-md border border-white/5 border-l-0 p-3 rounded-r-2xl shadow-xl"
+      className="fixed left-0 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col gap-3 bg-bg-1/80 backdrop-blur-md border border-accent/30 border-l-0 p-3 rounded-r-2xl shadow-xl"
     >
       {socials.map((social) => {
         const Icon = social.icon

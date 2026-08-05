@@ -12,7 +12,7 @@ export default function Achievements() {
         </FadeIn>
 
         <div className="mb-20">
-          <h3 className="font-heading font-bold text-3xl md:text-4xl text-text-0 mb-8 pb-4">Academic & Competitive</h3>
+          <h3 className="font-heading font-bold text-3xl md:text-4xl text-text-0 mb-8 pb-4">Academic & Competitive Coding</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {ACADEMICS_COMPETITIVE.map((achievement, i) => (
               <AchievementCard key={achievement.id} achievement={achievement} index={i} />

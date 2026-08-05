@@ -90,17 +90,7 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Availability badge */}
-        <div className="hidden md:flex items-center gap-2">
-          <span
-            className="w-2 h-2 rounded-full bg-accent"
-            style={{ animation: 'pulse 2s ease-in-out infinite' }}
-          />
-          <span className="font-mono text-[10px] text-text-2 tracking-wider uppercase">
-            Open to opportunities
-          </span>
-        </div>
-
+        
         {/* Mobile hamburger */}
         <button
           className="md:hidden flex flex-col gap-1.5 p-2"

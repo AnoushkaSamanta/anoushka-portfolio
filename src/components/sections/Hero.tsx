@@ -54,7 +54,7 @@ export default function Hero() {
                 Contact Me
               </a>
               {/* Resume Button */}
-              <a href="https://docs.google.com/document/d/1Pax_aACQxdA-THjdQLoK0E88cWX3n_IgIoQyEH-KVgA/edit?usp=sharing" target="_blank" rel="noopener noreferrer"
+              <a href="https://drive.google.com/file/d/1oAlulSB3yoGXgQa5NZvUIVfYUyerBY1g/view?usp=sharing" target="_blank" rel="noopener noreferrer"
                  className="bg-accent text-bg-0 text-sm md:text-base px-6 py-3 md:px-8 md:py-4 hover:bg-accent/90 transition-all duration-300 tracking-wide font-mono flex items-center gap-2 rounded-lg font-semibold">
                 View Resume <ArrowUpRight size={16} />
               </a>

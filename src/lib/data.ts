@@ -273,7 +273,7 @@ export const ACADEMICS_COMPETITIVE: Achievement[] = [
   {
     id: 'leetcode',
     title: 'LeetCode Competitive Programming',
-    detail: 'Solved 400+ LeetCode problems in Java; achieved a 1,688 Contest Rating (Top ~14.68% globally).',
+    detail: 'Solved 450+ LeetCode problems in Java; achieved a 1,688 Contest Rating (Top ~14.68% globally).',
     type: 'Competitive Programming',
   },
 ]
